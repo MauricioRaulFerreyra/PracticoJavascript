@@ -1,0 +1,101 @@
+/* /* Menú horizontal con transiciones */
+/* Formato general de cada item */
+/* Atributos y transición */
+.navbar-nav{
+    position: relative;
+    left: 15em;
+}
+.nav-link {
+  display: block;
+  position: relative;
+  height: 90px;
+  width: 120px;
+  margin: 0 0 0 1px;
+  overflow: hidden;
+  > span {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    > span {
+      display: block;
+      text-align: center;
+      border-radius: 0em;
+      padding: 2em 0 1.5em;
+    }   
+  }    
+  &:after {
+    display: block;
+    text-align: center;
+    border-top-left-radius: 0.7em;
+    border-top-right-radius: 0.7em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    padding: 1.3em 1em;
+    content: attr(data-title);
+    width: 100%;
+    height: 99%;
+    background: rgb(83, 171, 209);
+    color: rgb(23, 23, 24);
+    font-size: 1.1em;
+    opacity: 0.8;
+    border: 1px solid #fff;
+  }
+  &:hover {  
+    :after{
+      background: rgb(4, 52, 107);
+      border-radius: 1.2em;
+      border: 1px dashed #fff;
+      font-weight: 900;
+      opacity: 1;
+      color:#fff
+    }  
+  }
+}
+  
+  /* Fin Atributos y transición */
+  /* transiciones/transformaciones */
+  .nav-link > span {
+    width: 120px;
+    color: whitesmoke;
+  }
+  
+  .nav-link.servicios > span {
+    background-color: #a19e9e;
+  }
+  
+  .nav-link.inicio > span {
+    background-color: #a19e9e;
+  }
+  
+  .nav-link.nosotros > span {
+    background-color: #a19e9e;
+  }
+  
+  .nav-link.contacto > span {
+    background-color: #a19e9e;
+  }
+  
+  .nav-link.galeria > span {
+    background-color: #a19e9e;
+  }
+  /* Dando formato a la lista */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+
+    a {
+      display: inline;
+      float: left;
+      text-decoration: none;
+      font-family: sans;
+    }
+  }    
+}
+  

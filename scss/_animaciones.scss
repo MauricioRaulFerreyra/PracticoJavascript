@@ -1,0 +1,63 @@
+
+/* ANIMACIONES */
+@keyframes animaciones-uno {
+    from {
+      background: white;
+    }
+    to {
+      background: black;
+    }
+  }
+  @keyframes animaciones-dos {
+    from {
+      background: white;
+    }
+    to {
+      background: black;
+    }
+  }
+  @keyframes animaciones-tres {
+    from {
+      background: white;
+    }
+    to {
+      background: black;
+    }
+  }
+  @keyframes animacion-container-fluid {
+    from {
+      background: white;
+    }
+    to {
+      background: whitesmoke;
+    }
+  }
+  
+  .animacion-servicios .diseño:hover {
+    text-decoration: none;
+    text-transform: capitalize;
+    background: white;
+    animation-name: animaciones-uno;
+    animation-duration: 1s;
+  
+    .desarrollo {  
+   
+      &:hover {
+        text-decoration: none;
+        text-transform: capitalize;
+        background: white;
+        animation-name: animaciones-dos;
+        animation-duration: 1s;
+      }
+    }
+    .creatividad {  
+
+      &:hover {
+        text-decoration: none;
+        text-transform: capitalize;
+        background: white;
+        animation-name: animaciones-tres;
+        animation-duration: 1s;
+      }
+    }
+  }

@@ -1,0 +1,39 @@
+.section-img2{
+    position: absolute;
+    top: 12em;
+    width: 40%;
+    height: 65%;
+    
+  }
+  .section-img2 h4{
+    position: relative;
+    left: 0.2em;
+    font-weight: 800;
+    font-size: 24.5px;
+    color: #c4def0;
+  }
+  .section-img2 .imagen2{
+    position: relative;
+    top: 1em;
+    left: 0.3em;
+    width: 99%;
+    height: 68%;
+    z-index: 10;
+    border: 5px solid rgb(55, 118, 212);
+    box-shadow: 2px 14px 32px 23px;
+    color: rgb(55, 118, 212);
+  }
+  .section-img2 .parrafo1{
+    position: relative;
+    top: 0.5em;
+    left: 0.3em;
+    color: #b9d3ec;
+    text-align: justify; 
+  }
+  .section-img2 .parrafo2{
+    position: relative;
+    top: 3em;
+    left: 0.3em;
+    color: #b9d3ec;
+    text-align: justify; 
+  }

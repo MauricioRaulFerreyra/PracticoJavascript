@@ -1,0 +1,38 @@
+.pie-de-pagina {
+    position: relative;
+    float: right;
+    bottom: 400px;
+    right: 90px;
+  }
+  .pie-de-pagina a {
+    display: flex;
+    flex-basis: 100px;
+    text-decoration: none;
+    margin: 0px 0px 60px 0px;
+    font-size: 300%;
+  }
+  /*# sourceMappingURL=style.css.map */
+footer{
+  background-color: rgb(207, 221, 240);
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.footer-data{
+  width: 100%;
+}
+
+.footer-icons{
+  width: 20%;
+  margin-left: 46%;
+}
+
+.footer-data h3{
+  margin-top: 1.5em;
+  text-align: center;
+}
+.footer-icons .fab{
+  font-size: 25px;
+  padding: .3em;
+  color: rgb(22, 57, 104);
+}

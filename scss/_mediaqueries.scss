@@ -1,0 +1,714 @@
+
+/* MEDIA QUERIES 1405 */ 
+@media screen and (max-width: 1365px){
+  .navbar-nav{
+    left: 12em;
+  }
+  .section-img2{
+    position: relative;
+    top: 0.5em;
+    width: 100%;
+    height: 650px; 
+    background-color: rgb(46, 109, 192);
+  }
+  .section-img2 .imagen2{
+    position: relative;
+    top: 1em;
+    left: 0.3em;
+    width: 99%;
+    height: 400px;
+  }
+  .section-img2 h4{
+    position: relative;
+    top: 7px;
+    text-align: center;
+    font-size: 23px;
+    color: #1c2630;
+  }
+  .section-img2 .parrafo1{
+    color: #202f3d;
+    text-align:justify; 
+  }
+  .section-img2 .parrafo2{
+    color: #202f3d;
+    text-align: left; 
+    box-sizing: content-box;
+    }
+}
+   
+/* MEDIA QUERIES 1260 */ 
+@media screen and (max-width: 1260px){
+  .navbar-nav{
+    left: 8em;
+  }
+  .footer-icons{
+    width: 20%;
+    margin-left: 46%;
+  }
+}
+
+/* MEDIA QUERIES 1130 */ 
+@media screen and (max-width: 1130px){
+  .navbar-nav{
+    left: 5em;
+  }
+}
+/*MEDIA QUERIES  890 */ 
+@media screen and (max-width: 890px){
+  .section-img2{
+    height: 750px; 
+  }
+}
+   
+   /*MEDIA QUERIES  520 */ 
+@media screen and (max-width: 520px){
+  .section-img2 h4{
+    font-weight: 600;
+    font-size: 22.5px;
+    
+  }
+  .section-img2 .parrafo1{
+    font-size: 14px;
+  }
+  .section-img2 .parrafo2{
+    font-size: 14px;
+  }
+  .section-img2{
+    height: 850px;   
+  }
+}
+   
+  /*MEDIA QUERIES  375 */ 
+@media screen and (max-width: 375px){
+   
+  .footer-icons{
+    position: relative;
+    left: -3%;
+  }
+  .section-img2 h4{
+    font-weight: 500;
+    font-size: 18px;
+    
+  }
+  .section-img2 .parrafo1{
+    font-size: 13px;
+  }
+  .section-img2 .parrafo2{
+    font-size: 13px;
+  }
+  .section-img2{
+    height: 1000px; 
+  }
+}
+   
+ /* FOOTER MEDIA QUERIES 1100*/ 
+@media screen and (max-width: 1100px){
+  .footer-data .fab{
+    position: relative;
+    left: 28%;
+  }
+}
+   
+/* FOOTER MEDIA QUERIES 880*/ 
+@media screen and (max-width: 880px){
+  .footer-data .fab{
+    position: relative;
+    left: 23%;
+  }
+}
+   
+/* FOOTER MEDIA QUERIES 1150*/ 
+@media screen and (max-width: 1150px){
+  .footer-icons{
+    width: 20%;
+    margin-left: 38.5%;
+  }
+}
+   
+ /* FOOTER MEDIA QUERIES 1150*/ 
+@media screen and (max-width: 1149px){
+  .footer-icons{
+    width: 20%;
+    margin-left: 45%;
+  }
+}
+   
+/* FOOTER MEDIA QUERIES 1100*/ 
+@media screen and (max-width: 1100px){
+  .footer-icons{
+    width: 20%;
+    margin-left: 39%;
+  }
+}
+   
+/* FOOTER MEDIA QUERIES 650*/ 
+@media screen and (max-width: 650px){
+  .footer-icons{
+    width: 22%;
+    margin-left: 36%;
+  }
+}
+   
+   /* FOOTER MEDIA QUERIES 580*/ 
+@media screen and (max-width: 580px){
+  .footer-icons{
+    width: 24%;
+    margin-left: 36%;
+  }
+  .footer-icons .fab{
+    font-size: 24px;
+    padding: .1em;
+  }
+}
+   /* FOOTER MEDIA QUERIES 420*/ 
+@media screen and (max-width: 420px){
+  .footer-icons{
+    width: 24%;
+    margin-left: 34%;
+  }
+}
+
+.imagenes-galeria {
+  display: grid;
+  /* crea mi elemento en cuadricula */
+  grid-template-columns: auto auto auto; 
+  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+  /* cantidad de columnas y su medida */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: auto auto;
+  /* cantidad de filas y su medida */
+  background-color: rgb(214, 200, 200);
+  box-sizing: border-box;
+  padding: 1px;
+  grid-gap: 7px;
+
+  .imagen-grid {  
+    border: 1.5px solid #fff;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+.img-grid{
+  width: 80%;
+  height: 70%;
+}
+
+   
+/* MEDIA QUERIES */
+@media screen and (max-width:1440px){
+  .enviar{
+    margin: 5% 0 5% 18.5%;
+  }
+}
+@media screen and (max-width:1400px){
+  .enviar{
+    margin: 5% 0 5% 19%;
+  }
+}
+@media screen and (max-width:1300px){
+  .enviar{
+    margin: 5% 0 5% 21.5%;
+  }
+}
+  
+@media screen and (max-width:1251px){
+  form{
+    width: 45%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre {
+    margin-left: 13.5%;
+  }
+  form textarea .input-area {
+    margin-left: 70px; 
+  }
+  .enviar{
+    margin: 5% 0 5% 24.5%;
+    width: 250px;
+  }
+}
+@media screen and (max-width:1201px){
+  .enviar{
+    margin: 5% 0 5% 25%;
+    width: 250px;
+  }
+  form textarea .input-area {
+    margin-left: 70px; 
+  }
+}
+  
+@media screen and (max-width:1140px){
+  form .label-nombre, .label-email, .label-area, .input-nombre {
+    margin-left: 9.23%;
+  }
+  .enviar{
+    margin: 5% 0 5% 23%;
+  }
+  form textarea .input-area {
+    margin-left: 70px; 
+  }
+}
+  
+@media screen and (max-width:1070px){
+  form{
+    width: 55%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre {
+    margin-left: 14.5%;
+  }
+  .enviar{
+    margin: 5% 0 5% 26.5%;
+  }
+}
+  
+@media screen and (max-width:975px){
+  form .label-nombre, .label-email, .label-area, .input-nombre {
+    margin-left: 11%;
+  }
+  .enviar{
+    margin: 5% 0 5% 23.5%;
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 18px 6px;
+  }
+}
+  
+@media screen and (max-width:875px){
+  form .label-nombre, .label-email, .label-area, .input-nombre {
+    margin-left: 8%;
+  }
+  .enviar{
+    margin: 5% 0 5% 21.5%;
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 18px 6px;
+  }
+}
+@media screen and (max-width:807px){
+  form{
+    width: 75%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 16%;
+  }
+  .enviar{
+    margin: 5% 0 5% 27%;
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 18px 6px;
+  }
+}
+@media screen and (max-width:790px){
+  form{
+    width: 75%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 16%;
+  }
+  .enviar{
+    margin: 5% 0 5% 26%;
+  }
+}
+@media screen and (max-width:775px){
+  form{
+    width: 65%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 9%;
+  }
+  .enviar{
+    margin: 5% 0 5% 24%;
+  }
+}
+@media screen and (max-width:781px){
+  form{
+    width: 75%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 14%;
+  }
+  .enviar{
+    margin: 5% 0 5% 24%;
+  }
+}
+  
+@media screen and (max-width:755px){
+  form{
+    width: 75%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 14%;
+  }
+  .enviar{
+    margin: 5% 0 5% 27%;
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 18px 6px;
+  }
+}
+  
+@media screen and (max-width:691px){
+  form{
+    width: 75%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 11%;
+  }
+  .enviar{
+    margin: 5% 0 5% 24%; 
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 18px 6px;
+  }
+}
+  
+@media screen and (max-width:655px){
+  form{
+    width: 75%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 8%;
+  }
+  .enviar{
+    margin: 5% 0 5% 23%;
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 18px 6px;
+  }
+}
+@media screen and (max-width:600px){
+  form{
+    width: 85%;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 8%;
+  }
+  .enviar{
+    margin: 5% 0 5% 22%;
+  }
+  .titulo{
+    font-size: 28px;
+  }
+  .subtitulo{
+    font-size: 19px;
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 15px 4px;
+  }
+}
+  
+@media screen and (max-width:570px){
+  .titulo{
+    position: relative;
+    top: 0.6em;
+    margin-top: auto;
+    font-size: 24px;
+  }
+  .subtitulo{
+    position: relative;
+    top: 1.2em;
+    font-size: 17px;
+  }
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 6.5%;
+  }
+  .enviar{
+    margin: 5% 0 5% 21%;
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 15px 4px;
+  }
+}
+  
+@media screen and (max-width:521px){
+  form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+    margin-left: 4%;
+  }
+  .enviar{
+    margin: 5% 0 5% 18%;
+  }
+  .titulo{
+    margin-bottom: -1.5em;
+  }
+  .subtitulo{
+    margin-top: 2.5em;
+  }
+  form input, textarea{
+    box-shadow: 1px 2px 15px 4px;
+  }
+  form{
+    .input-nombre{
+      width: 150px;
+    }
+    .input-email{
+      width: 150px;
+    }
+    .input-area{
+      width: 350px;
+    }
+  }
+}
+  
+  @media screen and (max-width:511px){
+    form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+      margin-left: 2.5%;
+    }
+    .titulo{
+      margin-top: auto;
+      position: relative;
+      top: 0.6em;
+    }
+    .subtitulo{
+      position: relative;
+      top: 1.2em;
+    }
+    form input, textarea{
+      box-shadow: 1px 2px 15px 4px;
+    }
+    form .input-nombre {
+      margin-bottom: 20px;
+      margin-left: 25px;
+    }
+    form{
+      .input-nombre{
+        width: 150px;
+      }
+      .input-email{
+        width: 150px;
+      }
+      .input-area{
+        width: 350px;
+      }
+    }
+  }
+  
+  @media screen and (max-width:497px){
+    form{
+      width: 100%;
+    }
+    form .label-nombre, .label-email, .label-area, .input-nombre, textarea{
+      margin-left: 9%;
+    }
+    .enviar{
+      margin: 5% 0 5% 23%;
+    }
+    .titulo{
+      margin-top: auto;
+      position: relative;
+      top: 1em;
+      font-size: 25px;
+    }
+    .subtitulo{
+      position: relative;
+      top: 1.8em;
+      font-size: 16px;
+    }
+    form input, textarea{
+      box-shadow: 1px 2px 14px 3px;
+    }
+    form .input-nombre {
+      margin-bottom: 20px;
+      margin-left: 25px;
+    }
+    form{
+      .input-nombre{
+        width: 150px;
+      }
+      .input-email{
+        width: 150px;
+      }
+      .input-area{
+        width: 380px;
+      }
+    }
+  }
+
+  @media screen and (max-width:440px){
+  
+    form{
+      width: 100%;
+    }
+    form .label-nombre, .label-area, .input-nombre, textarea{
+      margin-left: 9%;
+    }
+    .enviar{
+      margin: 5% 0 5% 23%;
+    }
+    .titulo{
+      margin-top: auto;
+      position: relative;
+      top: 1em;
+      font-size: 25px;
+    }
+    .subtitulo{
+      position: relative;
+      top: 1.8em;
+      font-size: 16px;
+    }
+    form input, textarea{
+      box-shadow: 1px 2px 14px 3px;
+    }
+    form{  
+      .input-nombre{
+        margin-bottom: 20px;
+        margin-left: 25px;
+        width: 155px;
+      }
+      .input-email{
+        width: 155px;
+      }    
+      .label-email{
+        margin-left: 120px;
+        width: 155px; 
+      }
+      .label-area{
+        width: 280px;
+      }
+    }
+    div .input-area{
+      width: 350px;
+      padding: 2em;
+    }
+  }
+@media screen and (max-width:400px){
+  form{
+    .label-email{
+      width: 100px;
+      margin-left: 120px;
+    }
+  }
+}
+@media screen and (max-width:390px){ 
+  form{
+    .input-nombre{
+      width: 115px;
+    }
+    .input-email{
+      width: 115px;
+    }
+    .input-area{
+      width: 290px;
+    }
+  }
+  .enviar{
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width:360px){
+  form{
+    .input-nombre{
+      width: 125px;
+    }
+    .input-email{
+      width: 125px;
+    }
+    .input-area{
+      width: 280px;
+    }
+    .enviar{
+      margin-left: 45px;
+    }
+    .label-email{
+      margin-left: 90px;
+    }
+  }   
+}
+@media screen and (max-width:330px){
+  form{
+    .input-nombre{
+      width: 125px;
+    }
+    .input-email{
+      width: 125px;
+    }
+    .input-area{
+      width: 280px;
+    }
+    .enviar{
+      margin-left: 35px;
+    }
+    .label-email{
+      margin-left: 90px;
+    }
+  }   
+}
+@media screen and (max-width:327px){
+  form{
+    .input-nombre{
+      width: 100px;
+    }
+    .input-email{
+      width: 100px;     
+    }
+    .label-email{
+      margin-left: 80px;
+    }
+  }
+  }
+@media screen and (max-width:320px){
+  form{
+    .input-nombre{
+      width: 100px;
+    }
+    .input-email{
+      width: 100px;
+    }
+    .input-area{
+      width: 260px;
+    }
+    .enviar{
+      margin-left: 25px;
+    }
+    .label-email{
+      margin-left: 80px;
+    }
+  }   
+}
+@media screen and (max-width:290px){
+  form{
+    .input-nombre{
+      width: 100px;
+    }
+    .input-email{
+      width: 100px;
+    }
+    .input-area{
+      width: 240px;
+    }
+    .enviar{
+      margin-left: 10px;
+    }
+    .label-email{
+      margin-left: 70px;
+    }
+  }   
+}
+@media screen and (max-width:278px){
+  form{
+    .label-email{
+      margin-left: 50px;
+    }
+    .input-nombre{
+      width: 90px;
+    }
+    .input-email{
+      width: 90px;
+    }
+  }
+}
+@media screen and (max-width:270px){
+  form{
+    .label-email{
+      margin-left: 50px;
+    }
+    .input-nombre{
+      width: 80px;
+    }
+    .input-email{
+      width: 80px;
+    }
+    .input-area{
+      width: 220px;
+    }
+  }
+}
