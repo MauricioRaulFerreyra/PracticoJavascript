@@ -13,70 +13,96 @@ const AMBAS = "AMBAS"
 
 
 alert("Cotización página/sitio web")
-alert("Elija DISEÑOHTMLCSS o MAQUETADOHTMLCSS o AMBAS")
+alert("Puede elegir DISEÑOHTMLCSS o MAQUETADOHTMLCSS o AMBAS")
 
-const cotizacion = {
-    diseño: 21000,
-    maquetado: 15000,
-    Ambas: 36000
-}
+const diseño = 21000
+const maquetado = 15000
+const Ambas = 36000
+
 
 let elegido = prompt("La opción elegida es :")
 
 if ( elegido !== DISEÑOHTMLCSS && elegido !== MAQUETADOHTMLCSS && elegido !== AMBAS) {
     alert("No elijio ninguna opcion propuesta")
     throw new Error("No eligio las opciones propuestas")
+} else if( elegido == DISEÑOHTMLCSS ) {
+    let cotizacion = diseño
+} else if( elegido == MAQUETADOHTMLCSS ) {
+    let cotizacion = maquetado
+} else if( elegido = AMBAS ) {
+    let cotizacion = Ambas
+} else {
+    alert("No eligio ninguna opción propuesta")
 }
-function cotizaweb(elegido) {   
 
-    switch (elegido) {
+
+function cotizar(cotizacion) {
+
+    let i = prompt("¿ Contado o Cuotas?");
+    if ( i == "Contado" ) {
+        let desc = (cotizacion * 10) / 100
+        let pago = cotizacion - desc
+        alert("El monto a pagar es "+ pago)
+        console.log(pago)
+    }   else if ( i == "Cuotas") {      
+            let cuotas =parseInt(prompt("¿Cantidad de cuotas?"));
+            while ( cuotas > 0 && cuotas <= 6 )  {                 
+            let rec = (cotizacion * 10) / 100
+            let pago = cotizacion + rec
+            console.log("Monto total a pagar es " + pago)
+            let recCuotas = pago / cuotas
+            alert("Son"+" "+cuotas+" "+"cuotas por mes de"+" "+recCuotas);
+            console.log("Monto de cada cuota es " + recCuotas)
+            break;
+            }                   
+    } else {
+        alert("No selecciono ninguna opción de pago")
+    } 
+}
+
+function cotizaweb(elegido) {  
+
+    switch (elegido) { 
+
         case DISEÑOHTMLCSS:
-            alert("cotizar DiseñoHTMLCSS")
-            console.log("Cotizar DiseñoHTMLCSS")
-            alert(cotizacion.diseño)
-            console.log(cotizacion.diseño)
-            alert("Puedes hacerlo hasta en 12 cuotas")
-            let cuotas =  parseInt(prompt("¿En cuantas cuotas lo desea hacer?"));
-            while( cuotas > 0 && cuotas <= 12 ) {
-                let cantcuotas = cotizacion.diseño / cuotas
-                alert("Son"+" "+cuotas+" "+"cuotas por mes de"+" "+cantcuotas);
-                console.log(cantcuotas)
-                break;
-            }
+             
+            alert("cotizar DISEÑOHTMLCSS")
+            console.log("Cotizar DISEÑOHTMLCSS")
+            alert(diseño)
+            console.log(diseño)
+            alert("Puedes hacerlo hasta en 6 cuotas")
+            alert("Al contado un 10% de descuento o un 10% recargo hasta 6 cuotas")
+            cotizar(diseño)
             break;
+
         case MAQUETADOHTMLCSS:
-            alert("cotizar MaquetacionHTMLCSS")
-            console.log("Cotizar MaquetacionHTMLCSS")
-            alert(cotizacion.maquetado)
-            console.log(cotizacion.maquetado)
-            alert("Puedes hacerlo hasta en 12 cuotas")
-            let cuotas2 =  parseInt(prompt("¿En cuantas cuotas lo desea hacer?"));
-            while( cuotas2 > 0 && cuotas2 <= 12 ) {
-                let cantcuotas = cotizacion.diseño / cuotas2
-                alert("Son"+" "+cuotas2+" "+"cuotas por mes de"+" "+cantcuotas);
-                console.log(cantcuotas)
-                break;
-            }
+            
+            alert("cotizar MAQUETADOHTMLCSS")
+            console.log("Cotizar MAQUETADOHTMLCSS")
+            alert(maquetado)
+            console.log(maquetado)
+            alert("Puedes hacerlo hasta en 6 cuotas")
+            alert("Al contado un 10% de descuento o un 10% recargo hasta 6 cuotas")
+            cotizar(maquetado) 
             break;
-        case AMBAS:  
+
+        case AMBAS:
+            
             alert("cotizar Ambas")
             console.log("Cotizar Ambas")
-            alert(cotizacion.Ambas)
-            console.log(parseInt(cotizacion.Ambas))
-            alert("Puedes hacerlo hasta en 12 cuotas")
-            let cuotas3 =  parseInt(prompt("¿En cuantas cuotas lo desea hacer?"));
-            while( cuotas3 > 0 && cuotas3 <= 12 ) {
-                let cantcuotas = cotizacion.Ambas / cuotas3
-                alert("Son"+" "+cuotas3+" "+"cuotas por mes de"+" "+cantcuotas);
-                console.log(cantcuotas)
-                break;
-            }
+            alert(Ambas)
+            console.log(Ambas)
+            alert("Puedes hacerlo hasta en 6 cuotas")
+            alert("Al contado un 10% de descuento o un 10% recargo hasta 6 cuotas")
+            cotizar(Ambas)
             break;    
     }
 
 }
 
-cotizaweb(elegido)
-cotizaweb("AMBAS")
+cotizaweb(elegido) 
 
 
+
+
+ 

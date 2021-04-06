@@ -40,8 +40,30 @@ for ( let i = 1; i <= 10; i++ ) {
  }
 
 */
+// Password
 
+const Password = "4444"
 
+let passInvalido = true;
+
+/*
+while (passInvalido) {
+
+    let passIngresado = prompt("Ingrese su contraseña")
+
+    if ( passIngresado === Password) {
+
+        alert("Bienvenido Administrador")
+
+        console.log(Password)
+
+        passInvalido = false;
+
+    }
+}
+
+console.log("Ciclo terminado")
+*/
 
 
 
