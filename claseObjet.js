@@ -1,29 +1,26 @@
 
-
+// se creo un arrays
 const listaEmpresa = []
-
-const create = (nombres) => {
-    listaEmpresa.push(nombres)
+// se utiliza método push
+const create = (empresa) => {
+    listaEmpresa.push(empresa)
 }
 
 const getAll = () => {
     return listaEmpresa
 }
 
-class Empresa {
-
-    constructor(nombre, rubro) {
-        this.nombre = nombre
-        this.rubro = rubro
-    }
-
+// se creo un objeto Empresa
+function Empresa (nombre, rubro) {
+    this.nombre = nombre;
+    this.rubro  = rubro; 
 }
 
-const si = "si"
-let i = "si"
+const si = "s"
+let i = "s"
 
 while ( i == si ) {       
-    i = prompt("¿Desea ingresar al listado de empresas?")  
+    i = prompt("¿Desea ingresar al listado de empresas? s/n")  
     if ( i == si ) {
         const nombre = prompt("Nombre de la empresa")
         console.log(nombre)
