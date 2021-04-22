@@ -52,7 +52,8 @@ while ( i == si ) {
             console.log(suma())
         }
         // lista de la empresa ingresada
-        console.log(empresa)         
+        console.log(empresa)  
+        console.log(listaEmpresa)      
     } else { 
         i = prompt("¿Desea seguir con el listado? si/no") 
     } 
