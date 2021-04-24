@@ -26,6 +26,12 @@ const create = (empresa) => {
     return listaEmpresa
 }
 
+const findOne = (nombre) => {
+    nombre = nombre.toLowerCase()
+    const empresalist = listaEmpresa.find( empresa => empresa.nombre === nombre )
+    return empresalist
+}
+
 const formEmpresa = document.getElementById('form-Empresa')
 const inputNombre = document.getElementById('input-nombre')
 const inputRubro = document.getElementById('input-rubro')
@@ -47,28 +53,45 @@ mostrarlist(listaEmpresa)
 formEmpresa.addEventListener(`submit`, ( event) => {
 
     // previene la actualización de la página
+
     event.preventDefault()
 
     // ejecuta
+
     const nombre = inputNombre.value
     const rubro = inputRubro.value
 
     // crea una empresa nueva y la agrega al array
+
     const empresa = new Empresa(nombre, rubro)
-    create(empresa)
-
-    // actualiza el localStorage del usuario
-    localStorage.setItem('empresas', JSON.stringify(listaEmpresa)) 
-
-    // limpia los inputs
-    inputNombre.value = ''
-    inputRubro.value  = ''
-
-    // agrega un nuevo item a la lista
-    let itemEmpresa = document.createElement('li')
-    itemEmpresa.textContent =`El nombre de la empresa es ${nombre}` 
-    inputlistado.appendChild(itemEmpresa)
+    const emp = findOne (nombre)
     
+    if (emp) {
+
+        alert(`Ya está en la lista la empresa ${nombre}`)
+
+    } else {  
+
+        create(empresa)
+
+        // actualiza el localStorage del usuario
+
+        localStorage.setItem('empresas', JSON.stringify(listaEmpresa)) 
+
+        // limpia los inputs
+
+        inputNombre.value = ''
+        inputRubro.value  = ''
+
+        // agrega un nuevo item a la lista
+
+        let itemEmpresa = document.createElement('li')
+        itemEmpresa.textContent =`El nombre de la empresa es ${nombre}` 
+        inputlistado.appendChild(itemEmpresa)
+            
+    }
+
+
 })
 
 
