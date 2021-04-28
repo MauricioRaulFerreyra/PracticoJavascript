@@ -240,8 +240,390 @@ footer {
   padding: 1px;
   grid-gap: 7px;
 }
+/*   GERMAN    */
+.body-galeria{
+  background-color: #d6c8c8
+}
+
+.table-items{
+  display: flex;
+  flex-direction: column;
+}
+.container-card{
+  display: flex;
+  transition: .5s;
+}
+
+.container-card:hover{
+  box-shadow: 2px 2px 5px #171718;
+}
+
+.formulario-info-label{
+  color: #111;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: .1rem;
+}
+
+.container-formulario-visible{
+  display: none;
+}
+.container-formulario-visible.is-visible{
+  display: block;
+}
+/* TITULO FORMULARIO INFO DEL COMPRADOR*/
+.formas-pagos{
+  position: relative;
+  top: 2rem;
+  font-weight: 700;
+}
+.titulo-formulario-compra{
+  position: relative;
+  top: 1rem;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+.formulario-info-input-cod{
+  position: relative;
+  left:-.5rem;
+  inline-size: 24.5rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+.formulario-info-input-nombre-fin{
+  position: relative;
+  left:-.5rem;
+  inline-size: 24rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+.formulario-info-input-descrip{
+  position: relative;
+  left:-3rem;
+  inline-size: 24.5rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+.formulario-info-input-apellido-fin{
+  position: relative;
+  left:-1rem;
+  inline-size: 24rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+.formulario-info-input-precio{
+  position: relative;
+  left: -.4rem;
+  inline-size: 24.5rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+.formulario-info-input-email-fin{
+  position: relative;
+  left: .4rem;
+  inline-size: 24rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+.formulario-info-input-cant{
+  position: relative;
+  left: -1.6rem;
+  inline-size: 24.5rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+.formulario-info-input-total-fin{
+  position: relative;
+  left: -2.8rem;
+  inline-size: 27rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+
+.formulario-info-input-total{
+  position: relative;
+  left:.1rem;
+  inline-size: 24.5rem;
+  border-radius: .2rem;
+  padding: .2rem; 
+}
+
+.formulario-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.formulario-container{
+  display: flex;
+  flex-direction: column;
+  gap:.5rem;
+  margin: auto;
+}
+
+.formulario-info{
+  inline-size: 35rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: none;
+}
+
+.formulario-finalizar-compra{
+  position: relative;
+  top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  inline-size: 35rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.formulario-info-container-cards{
+  position: relative;
+  top: 2rem;
+  display: flex;
+  /* justify-content:flex-start; */
+  align-items: center;
+  border: 1px solid #171718;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  inline-size: 35rem;
+  padding: .5rem;
+}
+.formulario-info-container-tarjeta{
+  position: relative;
+  left: 4.5rem;
+  display: flex;
+  align-items: center;
+  inline-size: 12rem;
+}
+.container-input-tarjeta.master{
+  position: relative;
+  left: 1rem;
+}
+.container-input-tarjeta.visa{
+  position: relative;
+  right: 3.5rem;
+}
+.container-input-tarjeta.naranja{
+  position: relative;
+  right: 2rem;
+}
+.container-input-tarjeta.rapipago{
+  position: relative;
+  right: 5rem;
+}
+.formulario-info-container-tarjeta.master{
+  position: relative;
+  left: 5rem;
+}
+.formulario-info-container-tarjeta.visa{
+  position: relative;
+  left: 5.5rem;
+}
+.formulario-info-container-tarjeta.naranja{
+  position: relative;
+  right: 11rem;
+}
+.formulario-info-container-tarjeta.rapipago{
+  position: relative;
+  right: 11rem;
+}
+.container-input-tarjeta{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.img-tarjeta{
+  width: 2.5rem;
+  height: 2rem;
+}
+.formulario-info-tarjeta-check-master{
+  position: relative;
+  right: 6rem;
+  bottom: .8rem;
+}
+.formulario-info-tarjeta-check-visa{
+  position: relative;
+  right: 8rem;
+  bottom: .8rem;
+}
+.formulario-info-tarjeta-check-naranja{
+  position: relative;
+  right: 7.5rem;
+  bottom: .8rem;
+}
+.formulario-info-tarjeta-check-rapi{
+  position: relative;
+  right: 11rem;
+  bottom: .8rem;
+}
+.formulario-finalizar-compra input{
+  background: #fff;
+  /* box-shadow: 2px 2px 5px #53abd1; */
+  box-shadow: 2px 2px 5px #000; 
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 95px;
+}
+
+.formulario-info.is-visible{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  /* background:#1d1d1d; */
+  background-color: #d6c8c8;
+}
+
+.formulario-info input{
+  background: #fff;
+  /* box-shadow: 2px 2px 5px #53abd1; */
+  box-shadow: 2px 2px 5px #000; 
+  font-weight: 700;
+  display: inline-block;
+  margin-left: 95px;
+}
+/* TABLE INICIO*/
+/* .table-carrito{
+  display: none;
+}  */
+
+.container-table{
+  display: none;
+  /* border: 1px solid red; */
+}
+.container-table.is-visible{
+  display: block;
+  inline-size: 35rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.table-carrito{
+  border: 2px solid #FFF;
+  margin:auto;
+  inline-size: 35rem;
+}
+
+td .fas{
+  cursor: pointer;
+}
+tbody tr:hover td{
+  background: #777;
+  color: #e6f7f7;
+  letter-spacing: 1px;
+}
+td .fas:hover{
+  color: red;
+}
+.table-items-total{
+  border: none
+}
+.table-total-total{
+  border: 1px solid #FFF;
+}
+th{
+  border: 1px solid #FFF;
+  text-align:center;
+  padding: .8rem;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: .1rem;
+  color:#000;
+  background-color: #e6c9c9;
+}
+td{
+  padding: .5rem;
+  border: 1px solid #FFF;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color:#333;
+}
+
+.table-items-button{
+  inline-size: 7rem;
+  border-radius: 1rem;
+  border: none;
+  padding: .5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-left: 74%;
+}
+.table-items-button:hover{
+  background:#FFF;
+}
+
+/* TABLE FIN*/
+.container-button{
+  position: relative;
+  top: 3rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.container-formulario-button{
+  position: relative;
+  top: 1rem;
+  margin: auto;
+}
+
+.formulario-info-button{
+  inline-size: 7rem;
+  border-radius: 1rem;
+  border: none;
+  padding: .5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+.formulario-info-button:hover{
+  background: #FFF;
+}
+.container-card .imagen-info-button:hover{
+  background:#FFF;
+}
+
+.container-price{
+  display: flex;
+  justify-content: flex-start;
+}
+.container-price h4, h5{
+  font-weight: 700;
+}
+.container-price-signo{  
+  font-size: 1.5rem;
+}
+
+.imagen-grid img{
+  box-shadow: 5px 5px 5px #171718;
+}
+.imagen-grid h3{
+  font-family: 'Jockey One', sans-serif;
+  font-size: 2.5rem;
+}
+.imagen-info{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  box-sizing: border-box;
+  position: relative;
+  right: 1rem;
+}
+
+.imagen-info h3{
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+}
+
+.imagen-info .imagen-info-button{
+  border: none;
+  padding: .5rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+/*  GERMAN - FIN*/
 .imagenes-galeria .imagen-grid {
-  border: 1.5px solid #fff;
+  /* border: 1.5px solid #fff; */
   text-align: center;
   box-sizing: border-box;
 }
@@ -588,9 +970,11 @@ div .input-nombre {
   background-color: #d6c8c8;
   box-sizing: border-box;
   padding: 1px;
-  grid-gap: 7px;
+  grid-gap: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-.imagenes-galeria .imagen-grid {
+/* .imagenes-galeria .imagen-grid {
   border: 1.5px solid #fff;
   text-align: center;
   box-sizing: border-box;
@@ -599,7 +983,7 @@ div .input-nombre {
 .img-grid {
   width: 80%;
   height: 70%;
-}
+} */
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1440px) {

@@ -2,27 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-    <!-- Css -->
-    <link rel="stylesheet" href="css/style.css">
-
     <!--Fonts-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Gorditas&display=swap" rel="stylesheet">
+     
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gorditas&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    
-    <!--Icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    
-    <!-- SEO -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+     
+     <!--Icons-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+     <script src="https://kit.fontawesome.com/d1342bb8ca.js" crossorigin="anonymous"></script>
+     
+       <!-- SEO -->
     <!-- description tiene que tener un tamaño de 160 caracteres como máximo -->
     <meta name="description" content="Los mejores diseños y el mejor desarrollo web al alcance de tu mano">
     <!-- tamaño máximo 70 caracteres y la palabra clave tiene que estar al principio -->
@@ -40,60 +43,263 @@
     <meta property="og:url" content="https://NombreSitioWeb.com">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es ES">
- 
+     
      <!doctype html>
-    
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     
+     <link rel="stylesheet" href="css/style.css">
+     <!doctype html>
+
 </head>
-<body body-inicio>
-  <header>    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><h1>NSW-Design</h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active inicio" href="index.html" data-title="Inicio"><span>Inicio</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active servicios" href="servicios.html" data-title="Servicios"><span>Servicios</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active nosotros" href="nosotros.html" data-title="Nosotros"><span>Nosotros</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active galeria" href="galeria.html" data-title="Galeria"><span>Galeria</span><span></a>
-              </li>
-              <li class="nav-item">
-                 <a class="nav-link active contacto" href="contacto.html" data-title="Contacto"><span>Contacto</span></a>
-              </li>
-            </ul>
-          </div>
+
+    <body class="body-galeria">   
+
+    <section class="imagenes-galeria" id="container-principal">
+    
+      <div class="container-card" id="card">      
+    
+        <div class="imagen-grid"> 
+          <h3>Diseño Digital</h3> 
+          <img src="https://pixnio.com/free-images/2018/06/28/2018-06-28-07-46-11.jpg" alt="diseño web de la página de Viajes" class="img-grid img-fluid rounded mx-auto d-block">
         </div>
-      </nav>
-  </header>    
+    
+        <div class="imagen-info">
+          <span hidden=true >1</span>
+          <h3 class="imagen-info-title" id="title">Diseño Digital</h3>
+          <div class="container-price">
+            <h5 class="container-price-signo">$</h5>
+            <h4 class="container-price-price" id="price">12000</h4>
+          </div>
+          <button class="imagen-info-button" id="button-comprar">AGREGAR</button>
+        </div>
+      </div>
+    
 
+    
+      <div class="container-card" id="card">      
+    
+        <div class="imagen-grid"> 
+          <h3>Diseño App Movil</h3>
+          <img src="https://i.ytimg.com/vi/QwyK6V_bKvY/maxresdefault.jpg" alt="diseño web de la página Web Desing" class="img-grid img-fluid rounded mx-auto d-block">
+        </div>
+    
+       <div class="imagen-info">
+        <span hidden=true >2</span>
+        <h3 id="title">App Movil</h3>
+        <div class="container-price">
+          <h5 class="container-price-signo">$</h5>
+          <h4 class="container-price-price" id="price">20000</h4>
+        </div>
+        <button class="imagen-info-button">AGREGAR</button>
+       </div>
+      </div>
+    
 
-    <section class="grid-imagen">   
-        <img src="https://image.freepik.com/vector-gratis/fondo-purpura-desarrollo-web_76964-167.jpg" class="imagen img-fluid" alt="Diseño web">
-    </section>
-    <section class="section-img2">
-      <h4>MEJORA TU SEO Y POSICIONATE EN LA WEB</h4>
-      <p class="parrafo1">Ser capaz de posicionar bien una empresa en Google es uno de 
-        los factores más importantes para alcanzar el éxito de un negocio.
-      </p> 
-      <img src="https://legitclickmedia.com/wp-content/uploads/2020/02/SEO-Strategies-1024x576.jpg" class="imagen2 img-fluid" alt="">
-      <p class="parrafo2">Posicionamiento orgánico en buscadores con marketing de contenidos.
-        Cada proyecto de posicionamiento SEO es un mundo. Como en la medicina, no existe una única pastilla que cure
-        todos los males. Dependiendo de tus objetivos, la industria en la que te encuentres, al contexto de mercado
-        y el estatus actual de tu sitio web, el plan a seguir será diferente. No obstante, hay una línea de tiempo
-        que suele repetirse en cada proyecto de esta naturaleza.
-      </p>
-    </section>
- 
+    
+      <div class="container-card" id="card">      
+    
+        <div class="imagen-grid"> 
+          <h3>Diseño Desktop</h3>
+          <img src="https://www.agenciaseocolombia.com/wp-content/uploads/2015/09/DISE%C3%91O-WEB-RESPONSIVE.jpg" alt="diseño web de la página NSW-Design" class="img-grid img-fluid rounded mx-auto d-block">
+        </div>
+    
+        <div class="imagen-info">
+          <span hidden=true >3</span>
+          <h3 id="title">Desktop</h3>
+          <div class="container-price">
+            <h5 class="container-price-signo">$</h5>
+            <h4 class="container-price-price" id="price">15000</h4>
+          </div>
+          <button class="imagen-info-button">AGREGAR</button>
+       </div>
+      </div>
+    
+
+    
+      <div class="container-card" id="card">      
+    
+      <div class="imagen-grid"> 
+        <h3>Diseño Movil</h3>
+        <img src="https://www.virtualnauta.com/wp-content/uploads/2020/06/Dise%C3%B1o-de-P%C3%A1ginas-Web.jpg" alt="diseño web de la página Momentum" class="img-grid img-fluid rounded mx-auto d-block">
+      </div>
+    
+       <div class="imagen-info">
+        <span hidden=true >4</span>
+        <h3 id="title">First Movil</h3>
+        <div class="container-price">
+          <h5 class="container-price-signo">$</h5>
+          <h4 class="container-price-price" id="price">32000</h4>
+        </div>  
+        <button class="imagen-info-button">AGREGAR</button>
+       </div>
+    </div>
+    
+
+      <div class="container-card" id="card">      
+    
+        <div class="imagen-grid">
+          <h3>Diseño Responsive</h3>
+           <img src="https://casandrasoft.com/wp-content/uploads/2017/12/desarrolloweb.png" alt="diseño web de los desarrolladores de NSW-Design" class="img-grid img-fluid rounded mx-auto d-block">
+        </div>
+    
+       <div class="imagen-info">
+        <span hidden=true >5</span>
+        <h3 id="title">Responsive Design</h3>
+        <div class="container-price">
+          <h5 class="container-price-signo">$</h5>
+          <h4 class="container-price-price" id="price">27000</h4>
+        </div>
+        <button class="imagen-info-button">AGREGAR</button>
+       </div>
+      </div>
+    
+      <div class="container-card" id="card">      
+           
+        <div class="imagen-grid">
+          <h3>Diseño App</h3>
+          <img src="https://d375ed4q973kxa.cloudfront.net/cdn/13/images/curso-online-de-diseno-web-con-dreamweaver_l_primaria_1.jpg" alt="diseño web por la empresa NSW-Design" class="img-grid img-fluid rounded mx-auto d-block">
+        </div> 
+    
+       <div class="imagen-info">
+        <span hidden=true >6</span>
+        <h3 id="title">Digital App</h3>
+        <div class="container-price">
+          <h5 class="container-price-signo">$</h5>
+          <h4 class="container-price-price" id="price">32000</h4>
+        </div>
+        <button class="imagen-info-button">AGREGAR</button>
+       </div>
+      </div>
+    
+    </section> 
+
+    <form class="formulario-info" id="form">
+      <div class="formulario-container">
+        <div class="formulario-info-container">
+          <label class="formulario-info-label">CODIGO </label> 
+          <input class="formulario-info-input-cod" type="text" id="form-id" disabled>
+        </div>
+        <div class="formulario-info-container">
+          <label class="formulario-info-label">DESCRIPCION </label> 
+          <input class="formulario-info-input-descrip" type="text" id="form-description" disabled>
+        </div>
+        <div class="formulario-info-container">
+          <label class="formulario-info-label">PRECIO </label> 
+          <input class="formulario-info-input-precio" type="text" id="form-price" disabled>
+        </div>
+        <div class="formulario-info-container">
+          <label class="formulario-info-label">CANTIDAD </label> 
+          <input class="formulario-info-input-cant" type="text" id="cantidad"> 
+        </div>
+        <div class="formulario-info-container">
+          <label class="formulario-info-label">TOTAL </label> 
+          <input class="formulario-info-input-total" type="text" id="total-precio" disabled>
+        </div>
+      </div>
+      <div class="container-formulario-button">
+        <button class="formulario-info-button" id="btn-aceptar-carrito">Aceptar</button>
+        <button class="formulario-info-button" id="btn-cancelar">Cancelar</button>
+      </div>
+    </form>
+
+    <div class="container-table" id="container-table">
+      <table class="table-carrito">
+        <thead>
+          <tr>
+            <th>Codigo</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th id="table-subtotal">Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="table-items">
+        </tbody>
+        <tr>
+          <td class="table-items-total"></td>
+          <td class="table-items-total"></td>
+          <td class="table-items-total"></td>
+          <th class="table-total-total">TOTAL</th>
+          <th class="table-total-total" id="table-total"></th>
+        </tr>
+      </table>
+      <button class="table-items-button" id="table-buttom-comprar">COMPRAR</button>
+    </div>
+
+    <div class="container-formulario-visible" id="container-formulario-visible">
+
+      <h3 class="titulo-formulario-compra">Complete con sus datos para finalizar la compra</h3>
+      
+      <form class="formulario-finalizar-compra" id="formulario">
+        <div class="formulario-container">
+          <div class="formulario-info-container">
+            <label class="formulario-info-label">NOMBRE </label> 
+            <input class="formulario-info-input-nombre-fin" type="text" required id="form-nombre">
+          </div>
+          <div class="formulario-info-container">
+            <label class="formulario-info-label">APELLIDO </label> 
+            <input class="formulario-info-input-apellido-fin" type="text" required id="form-apellido">
+          </div>
+          <div class="formulario-info-container">
+            <label class="formulario-info-label">EMAIL </label> 
+            <input class="formulario-info-input-email-fin" type="email" required id="form-email">
+          </div>
+          <div class="formulario-info-container">
+            <label class="formulario-info-label">TOTAL A PAGAR </label> 
+            <input class="formulario-info-input-total-fin" type="number" id="total-pagar" disabled> 
+          </div>
+  
+          <h4 class="formas-pagos">Formas de pagos:</h4>
+          <div class="formulario-info-container-cards">
+            <div class="formulario-info-container-tarjeta master">
+              <div class="container-input-tarjeta master">              
+                <img  class="img-tarjeta" src="https://bancodino.com/wp-content/uploads/2020/02/tarjeta-MasterCard-Internacional3.png"  alt="">
+                <label for="">Mastercard</label>
+              </div>
+              <input class="formulario-info-tarjeta-check-master" type="radio" name="tarjeta" id="">
+            </div>
+            
+            <div class="formulario-info-container-tarjeta visa">
+              <div class="container-input-tarjeta visa">              
+                <img  class="img-tarjeta" src="https://www.visasoutheasteurope.com/content/dam/VCOM/regional/ap/taiwan/global-elements/images/tw-visa-gold-card-498x280.png"  alt="">
+                <label for="">Visa</label>
+              </div>
+              <input class="formulario-info-tarjeta-check-visa" type="radio" name="tarjeta" id="">
+            </div>
+  
+            <div class="formulario-info-container-tarjeta naranja">
+              <div class="container-input-tarjeta naranja">              
+                <img  class="img-tarjeta" src="https://images.ctfassets.net/yxlyq25bynna/4KxnhJfdtrmd1KrrpxGePM/2632d5fcd02f3d1d82dfc1dea2e36c53/tarjeta_naranja.png"  alt="">
+                <label for="">Naranja</label>
+              </div>
+              <input class="formulario-info-tarjeta-check-naranja" type="radio" name="tarjeta" id="">
+            </div>
+  
+            <div class="formulario-info-container-tarjeta rapipago">
+              <div class="container-input-tarjeta rapipago">              
+                <img  class="img-tarjeta" src="https://media.glassdoor.com/sqll/2485361/rapipago-squarelogo-1553137042987.png"  alt="">
+                <label for="">Rapipago</label>
+              </div>
+              <input class="formulario-info-tarjeta-check-rapi" type="radio" name="tarjeta" id="">
+            </div>
+           
+          </div>
+  
+          <!-- <div class="formulario-info-container">
+            <label class="formulario-info-label">TOTAL </label> 
+            <input class="formulario-info-input-total" type="text" id="total-precio" disabled>
+          </div> -->
+        </div>
+        <div class="container-button">
+          <button class="formulario-info-button" id="btn-aceptar-carrito-pago">Aceptar</button>
+          <button class="formulario-info-button" id="btn-cancelar">Cancelar</button>
+        </div>
+      </form>
+  
+    </div>
+
 
     <footer>
       <div class="footer-data">
@@ -110,10 +316,13 @@
 
     </footer> 
 
-  <!-- JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-  </script>
-    
-</body>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+</script>
+
+<script src="./proyecto.js"></script>
+
+
+</body> 
 </html>
