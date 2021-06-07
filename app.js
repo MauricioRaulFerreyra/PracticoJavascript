@@ -1,4 +1,4 @@
-const URL = "./api.json"
+
 $(document).ready(function () {
  
     $('header').addClass('text-center');   
@@ -29,6 +29,7 @@ $(document).ready(function () {
         
         $('#titulo').animate({width: '300px', opacity: '0.8'}, "slow");
 
+        const URL = "./api.json"
         $.get(`${URL}`, (response, status)=>{
 
             if(status === "success"){
