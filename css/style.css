@@ -59,9 +59,7 @@ header {
   text-align: justify;
 }
 
-/* /* Menú horizontal con transiciones */
-/* Formato general de cada item */
-/* Atributos y transición */
+
 .navbar-nav {
   position: relative;
   left: 15em;
@@ -116,8 +114,7 @@ header {
   color: #fff;
 }
 
-/* Fin Atributos y transición */
-/* transiciones/transformaciones */
+
 .nav-link > span {
   width: 120px;
   color: whitesmoke;
@@ -143,7 +140,7 @@ header {
   background-color: #a19e9e;
 }
 
-/* Dando formato a la lista */
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -171,7 +168,6 @@ ul li a {
   font-size: 300%;
 }
 
-/*# sourceMappingURL=style.css.map */
 footer {
   background-color: #cfddf0;
   padding-top: 20px;
@@ -220,12 +216,8 @@ footer {
 
 .imagenes-galeria {
   display: grid;
-  /* crea mi elemento en cuadricula */
-  /* grid-template-columns: auto auto auto; */
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* cantidad de columnas y su medida */
   grid-template-rows: auto auto;
-  /* cantidad de filas y su medida */
   background-color: #d6c8c8;
   box-sizing: border-box;
   padding: 1px;
@@ -264,7 +256,7 @@ footer {
 .container-formulario-visible.is-visible{
   display: block;
 }
-/* TITULO FORMULARIO INFO DEL COMPRADOR*/
+
 .formas-pagos{
   position: relative;
   top: 2rem;
@@ -328,10 +320,11 @@ footer {
 }
 .formulario-info-input-total-fin{
   position: relative;
-  left: -2.8rem;
+  left: -3.5rem;
   inline-size: 27rem;
   border-radius: .2rem;
   padding: .2rem; 
+  
 }
 
 .formulario-info-input-total{
@@ -340,6 +333,7 @@ footer {
   inline-size: 24.5rem;
   border-radius: .2rem;
   padding: .2rem; 
+  width: 384px;
 }
 
 .formulario-info-container{
@@ -352,7 +346,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap:.5rem;
-  margin: auto;
+  margin:auto;
 }
 
 .formulario-info{
@@ -366,24 +360,23 @@ footer {
 .formulario-finalizar-compra{
   position: relative;
   top: 1.5rem;
-  display: flex;
-  flex-direction: column;
   gap: .5rem;
   inline-size: 35rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  flex: center;
 }
 .formulario-info-container-cards{
   position: relative;
   top: 2rem;
   display: flex;
-  /* justify-content:flex-start; */
   align-items: center;
   border: 1px solid #171718;
   border-radius: 1rem;
   box-sizing: border-box;
   inline-size: 35rem;
   padding: .5rem;
+  width: 590px;
 }
 .formulario-info-container-tarjeta{
   position: relative;
@@ -427,7 +420,6 @@ footer {
 .container-input-tarjeta{
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 .img-tarjeta{
   width: 2.5rem;
@@ -455,7 +447,6 @@ footer {
 }
 .formulario-finalizar-compra input{
   background: #fff;
-  /* box-shadow: 2px 2px 5px #53abd1; */
   box-shadow: 2px 2px 5px #000; 
   font-weight: 700;
   display: inline-block;
@@ -466,26 +457,20 @@ footer {
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  /* background:#1d1d1d; */
   background-color: #d6c8c8;
 }
 
 .formulario-info input{
   background: #fff;
-  /* box-shadow: 2px 2px 5px #53abd1; */
   box-shadow: 2px 2px 5px #000; 
   font-weight: 700;
   display: inline-block;
    margin-left: 95px; 
 }
-/* TABLE INICIO*/
-/* .table-carrito{
-  display: none;
-}  */
+
 
 .container-table{
   display: none;
-  /* border: 1px solid red; */
 }
 .container-table.is-visible{
   display: block;
@@ -554,6 +539,7 @@ td{
   margin-bottom: 1rem;
 }
 .container-formulario-button{
+  content: center;
   position: relative;
   top: 1rem;
   margin: auto;
@@ -614,9 +600,8 @@ td{
   border-radius: 1rem;
   font-weight: 700;
 }
-/*  GERMAN - FIN*/
+
 .imagenes-galeria .imagen-grid {
-  /* border: 1.5px solid #fff; */
   text-align: center;
   box-sizing: border-box;
 }
@@ -651,7 +636,6 @@ p .descripcion-nosotros {
 
 
 
-/* ANIMACIONES */
 @keyframes animaciones-uno {
   from {
     background: white;
@@ -706,7 +690,7 @@ p .descripcion-nosotros {
   animation-duration: 1s;
 }
 
-/* MEDIA QUERIES 1405 */
+
 @media screen and (max-width: 1365px) {
   .navbar-nav {
     left: 12em;
@@ -747,7 +731,7 @@ p .descripcion-nosotros {
     box-sizing: content-box;
   }
 }
-/* MEDIA QUERIES 1260 */
+
 @media screen and (max-width: 1260px) {
   .navbar-nav {
     left: 8em;
@@ -758,19 +742,19 @@ p .descripcion-nosotros {
     margin-left: 46%;
   }
 }
-/* MEDIA QUERIES 1130 */
+
 @media screen and (max-width: 1130px) {
   .navbar-nav {
     left: 5em;
   }
 }
-/*MEDIA QUERIES  890 */
+
 @media screen and (max-width: 890px) {
   .section-img2 {
     height: 750px;
   }
 }
-/*MEDIA QUERIES  520 */
+
 @media screen and (max-width: 520px) {
   .section-img2 h4 {
     font-weight: 600;
@@ -789,7 +773,7 @@ p .descripcion-nosotros {
     height: 850px;
   }
 }
-/*MEDIA QUERIES  375 */
+
 @media screen and (max-width: 375px) {
   .footer-icons {
     position: relative;
@@ -813,49 +797,49 @@ p .descripcion-nosotros {
     height: 1000px;
   }
 }
-/* FOOTER MEDIA QUERIES 1100*/
+
 @media screen and (max-width: 1100px) {
   .footer-data .fab {
     position: relative;
     left: 28%;
   }
 }
-/* FOOTER MEDIA QUERIES 880*/
+
 @media screen and (max-width: 880px) {
   .footer-data .fab {
     position: relative;
     left: 23%;
   }
 }
-/* FOOTER MEDIA QUERIES 1150*/
+
 @media screen and (max-width: 1150px) {
   .footer-icons {
     width: 20%;
     margin-left: 38.5%;
   }
 }
-/* FOOTER MEDIA QUERIES 1150*/
+
 @media screen and (max-width: 1149px) {
   .footer-icons {
     width: 20%;
     margin-left: 45%;
   }
 }
-/* FOOTER MEDIA QUERIES 1100*/
+
 @media screen and (max-width: 1100px) {
   .footer-icons {
     width: 20%;
     margin-left: 39%;
   }
 }
-/* FOOTER MEDIA QUERIES 650*/
+
 @media screen and (max-width: 650px) {
   .footer-icons {
     width: 22%;
     margin-left: 36%;
   }
 }
-/* FOOTER MEDIA QUERIES 580*/
+
 @media screen and (max-width: 580px) {
   .footer-icons {
     width: 24%;
@@ -867,7 +851,7 @@ p .descripcion-nosotros {
     padding: 0.1em;
   }
 }
-/* FOOTER MEDIA QUERIES 420*/
+
 @media screen and (max-width: 420px) {
   .footer-icons {
     width: 24%;
@@ -876,13 +860,9 @@ p .descripcion-nosotros {
 }
 .imagenes-galeria {
   display: grid;
-  /* crea mi elemento en cuadricula */
   grid-template-columns: auto auto auto;
-  /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-  /* cantidad de columnas y su medida */
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: auto auto;
-  /* cantidad de filas y su medida */
   background-color: #d6c8c8;
   box-sizing: border-box;
   padding: 1px;
@@ -890,18 +870,7 @@ p .descripcion-nosotros {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-/* .imagenes-galeria .imagen-grid {
-  border: 1.5px solid #fff;
-  text-align: center;
-  box-sizing: border-box;
-}
 
-.img-grid {
-  width: 80%;
-  height: 70%;
-} */
-
-/* MEDIA QUERIES */
 @media screen and (max-width: 1440px) {
   .enviar {
     margin: 5% 0 5% 18.5%;
@@ -1443,4 +1412,4 @@ p .descripcion-nosotros {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+
