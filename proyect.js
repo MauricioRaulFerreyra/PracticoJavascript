@@ -1,7 +1,7 @@
 const containerPrincipal = document.getElementById("container-principal");
-const btnComprar = document.getElementById("button-comprar");
-const cardDescription = document.getElementById("title").textContent;
-const cardPrice = document.getElementById("price").textContent;
+//const btnComprar = document.getElementById("button-comprar");
+//const cardDescription = document.getElementById("title").textContent;
+//const cardPrice = document.getElementById("price").textContent;
 
 const form = document.getElementById("form");
 let formId = document.getElementById("form-id");
@@ -29,53 +29,66 @@ let id = 0;
 let carrito = [];
 
 const finalizarCompra = () => {
-    form.remove("is-visible");
-    containerTable.remove("is-visible");
-    formularioVisible.remove("is-visible")
+    
+    formularioVisible.classList.remove("is-visible");
+    form.classList.remove("is-visible");
+    containerTable.classList.remove("is-visible");
+    alert("Compra Finalizada con Exito")
 }
 
 const cancelar = () => {
-    document.getElementById("form-id").value = "";
-    document.getElementById("form-description").value = "";
-    document.getElementById("form-price").value = "";
-    document.getElementById("cantidad").value = "";
-    document.getElementById("total-precio").value = "";
-    document.getElementById("button-comprar").focus();
-    // form.remove("is-visible");
-}
 
-//*************** SELECCIONA EL SERVICIO A MOSTRAR EN EL FORMULARIO***************/
-const mostrar = (e) => {
-    if(e.target.classList.contains("imagen-info-button")){
-        addServicio(e.target.parentElement);
-    }
-}
-//***************                       FIN                       ***************/
-
-//*************** AGREGA EL REGISTRO SELECCIONADO AL FORMULARIO  *******************/
-const addServicio = (objecto) => {
-    form.classList.add("is-visible");
-    formDescripcion.value = objecto.querySelector("h3").textContent;
-    id = objecto.querySelector("span").textContent;
-    objecto.querySelector("button").dataset.id = id;
-    formId.value = id;
-    formPrecio.value = objecto.querySelector("h4").textContent;
-    document.getElementById("btn-cancelar").focus();
-}
-
-//***************                       FIN                       ***************/
-
-const mostrarCarrito = () => {
+    form.classList.remove("is-visible");
+    // console.log('boton cancelar')
     
     // document.getElementById("form-id").value = "";
     // document.getElementById("form-description").value = "";
     // document.getElementById("form-price").value = "";
     // document.getElementById("cantidad").value = "";
     // document.getElementById("total-precio").value = "";
-    const containerTable = document.getElementById("container-table");
-    containerTable.classList.add("is-visible");
+    // document.getElementById("button-comprar").focus();
+    
+}
+
+
+//***************  MUESTRA EL FORMULARIO AL SELECCIONAR UN PRODUCTO  ***************/
+const mostrar = (e) => {
+
+    console.log("boton agregar")
+
+    if(e.target.classList.contains("imagen-info-button")){
+        addServicio(e.target.parentElement);
+    }
+
+}
+//***************                       FIN                       ***************/
+
+
+//*************** AGREGA EL REGISTRO SELECCIONADO AL FORMULARIO  *******************/
+const addServicio = (objecto) => {
+
+    console.log('formulario descriptivo al seleccionar un producto')
+
+    form.classList.add("is-visible");
+    formDescripcion.value = objecto.querySelector("h3").textContent;
+    id = objecto.querySelector("span").textContent;
+    objecto.querySelector("button").dataset.id = id;
+    formId.value = id;
+    formPrecio.value = objecto.querySelector("h4").textContent;
+
+}
+
+//***************                       FIN                       ***************/
+const containerTable = document.getElementById("container-table");
+
+const mostrarCarrito = () => {
+
+    console.log('formulario final de compra')
+
+       containerTable.classList.add("is-visible");
         
     addCarrito();
+
 }
 
 //******************* CALCULA LA CANTIDAD Y SUBTOTAL DEL FORMULARIO ***************/
@@ -177,7 +190,7 @@ const pintarCarrito = () => {
 
 buttonAceptarCarrito.addEventListener("click", mostrarCarrito);
 form.addEventListener("click", modificar);
-containerPrincipal.addEventListener("click", mostrar);
+containerPrincipal.addEventListener("click", mostrar); // Boton 'agregar' que muestra el formulario descriptivo
 buttonCancelar.addEventListener("click", cancelar);
 buttonComprar.addEventListener("click", ()=> {
     formularioVisible.classList.add("is-visible") //Evento para hacer visible el formulario de pago
@@ -185,6 +198,7 @@ buttonComprar.addEventListener("click", ()=> {
     console.log(tableTotal.textContent)
 });
 btnFinalizarCompra.addEventListener("click", finalizarCompra); // Realizamos la compra
+
 
 
 
