@@ -1,8 +1,4 @@
 const containerPrincipal = document.getElementById("container-principal");
-//const btnComprar = document.getElementById("button-comprar");
-//const cardDescription = document.getElementById("title").textContent;
-//const cardPrice = document.getElementById("price").textContent;
-
 const form = document.getElementById("form");
 let formId = document.getElementById("form-id");
 let formDescripcion = document.getElementById("form-description");
@@ -15,8 +11,8 @@ const buttonAceptarCarrito = document.getElementById("btn-aceptar-carrito");
 
 let tableTotal = document.getElementById("table-total");
 
-const buttonComprar = document.getElementById("table-buttom-comprar"); // boton para mostrar el formulario de finalización de compra
-const formularioVisible = document.getElementById("container-formulario-visible"); //formulario que se pone visible para finalizar la compra
+const buttonComprar = document.getElementById("table-buttom-comprar"); 
+const formularioVisible = document.getElementById("container-formulario-visible"); 
 const totalPagar = document.getElementById("total-pagar");
 const btnFinalizarCompra = document.getElementById("btn-aceptar-carrito-pago");
 
@@ -39,19 +35,10 @@ const finalizarCompra = () => {
 const cancelar = () => {
 
     form.classList.remove("is-visible");
-    // console.log('boton cancelar')
-    
-    // document.getElementById("form-id").value = "";
-    // document.getElementById("form-description").value = "";
-    // document.getElementById("form-price").value = "";
-    // document.getElementById("cantidad").value = "";
-    // document.getElementById("total-precio").value = "";
-    // document.getElementById("button-comprar").focus();
     
 }
 
 
-//***************  MUESTRA EL FORMULARIO AL SELECCIONAR UN PRODUCTO  ***************/
 const mostrar = (e) => {
 
     console.log("boton agregar")
@@ -61,10 +48,7 @@ const mostrar = (e) => {
     }
 
 }
-//***************                       FIN                       ***************/
 
-
-//*************** AGREGA EL REGISTRO SELECCIONADO AL FORMULARIO  *******************/
 const addServicio = (objecto) => {
 
     console.log('formulario descriptivo al seleccionar un producto')
@@ -78,7 +62,7 @@ const addServicio = (objecto) => {
 
 }
 
-//***************                       FIN                       ***************/
+
 const containerTable = document.getElementById("container-table");
 
 const mostrarCarrito = () => {
@@ -91,7 +75,7 @@ const mostrarCarrito = () => {
 
 }
 
-//******************* CALCULA LA CANTIDAD Y SUBTOTAL DEL FORMULARIO ***************/
+
 const modificar = (e) => {
     e.preventDefault();
     cantidad.addEventListener("keyup", ()=>{
@@ -100,7 +84,7 @@ const modificar = (e) => {
         document.getElementById("total-precio").value = subtotal;
     })
 }
-//***************                       FIN                       ***************/
+
 
 const addCarrito = () =>{
 
@@ -123,7 +107,7 @@ const addCarrito = () =>{
     pintarCarrito();
 }
 
-//********** ELIMINAR REGISTRO SELECCIONADO EN EL CARRITO ***********//
+
 tableItem.addEventListener("click", (e) => {
 
     let productos = [];
@@ -136,7 +120,7 @@ tableItem.addEventListener("click", (e) => {
       
   })
 
-//***************                       FIN                       ***************/
+
 
 const pintarCarrito = () => {
 
@@ -190,14 +174,14 @@ const pintarCarrito = () => {
 
 buttonAceptarCarrito.addEventListener("click", mostrarCarrito);
 form.addEventListener("click", modificar);
-containerPrincipal.addEventListener("click", mostrar); // Boton 'agregar' que muestra el formulario descriptivo
+containerPrincipal.addEventListener("click", mostrar); 
 buttonCancelar.addEventListener("click", cancelar);
 buttonComprar.addEventListener("click", ()=> {
-    formularioVisible.classList.add("is-visible") //Evento para hacer visible el formulario de pago
+    formularioVisible.classList.add("is-visible") 
     totalPagar.value = tableTotal.textContent;
     console.log(tableTotal.textContent)
 });
-btnFinalizarCompra.addEventListener("click", finalizarCompra); // Realizamos la compra
+btnFinalizarCompra.addEventListener("click", finalizarCompra); 
 
 
 

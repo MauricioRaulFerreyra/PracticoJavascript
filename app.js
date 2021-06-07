@@ -1,10 +1,6 @@
 const URL = "./api.json"
 $(document).ready(function () {
-
-    // $('h1').html('desde etiqueta');
-    //  $('.display-4').html('desde clase');
-    // $('#idh1').html('desde id');
-
+ 
     $('header').addClass('text-center');   
      
     $('#titulo').css('background','gray');
@@ -21,7 +17,7 @@ $(document).ready(function () {
         $("h1").css("color", "black");
         $('#titulo').css('background','dimgray'); 
 
-        $('#titulo').animate({height: '50px', opacity: '0.4'}, "slow");
+        $('#titulo').animate({height: '100px', opacity: '0.4'}, "slow");
         
         $('#titulo').animate({width: '100px', opacity: '0.8'}, "slow");
         
@@ -29,11 +25,10 @@ $(document).ready(function () {
         
         $('#titulo').animate({width: '500px', opacity: '0.8'}, "slow");
 
-        $('#titulo').animate({height: '50px', opacity: '0.4'}, "slow");
+        $('#titulo').animate({height: '100px', opacity: '0.4'}, "slow");
         
         $('#titulo').animate({width: '300px', opacity: '0.8'}, "slow");
 
-        //************* */ CONSULTAMOS A LA API PARA MOSTRAR LA LISTA DE PRODUCTOS **************//
         $.get(`${URL}`, (response, status)=>{
 
             if(status === "success"){
@@ -62,21 +57,6 @@ $(document).ready(function () {
         })
 
     });
-
-    // $('.imagen-info-button').on('click',function (){
-
-    //     console.log('muestra formulario');
-    //     $('#form').toggle('slow');
-        
-    // })
-    
-    // $('#btn-cancelar').on('click',function (){
-
-    //     console.log('oculta formulario');
-
-    //     $('#form').toggle('slow');
-
-    // })
 
 
 });
